@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Exam Form</title>
+</head>
+<body>
+    <form action="/action.php">
+        <h1>Registration Form</h1>
+        Username- <input type="email" placeholder="Username/Email ID"> <br><br>
+        Password- <input type="password" placeholder="Password"> <br><br>
+        Mobile No.- <input type="number"> <br>
+
+        <h2>Select your class: </h2>
+        <label for="id1">
+            <input type="radio" name="class" value="Class X" id="id1"> Class X
+        </label> <br>
+        <label for="id2">    
+            <input type="radio" name="class" value="Class XII" id="id2"> Class XII
+        </label> <br>
+
+        <h2>Select your subjects: </h2>
+        <label for="math">
+            <input type="checkbox" name="subject" value="math" id="id1">Maths
+        </label><br>
+        <label for="phy">
+            <input type="checkbox" name="subject" value="phy" id="id2">Physics
+        </label><br>
+        <label for="chem">
+            <input type="checkbox" name="subject" value="chem" id="id3">Chemistry
+        </label><br>
+        <label for="eng">
+            <input type="checkbox" name="subject" value="eng" id="id4">English
+        </label><br>
+
+        <h2>Select your city: </h2>
+        <select name="city" id="102">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Indore">Indore</option>
+        </select> <br>
+
+        <h2>Feedback:</h2>
+        <textarea name="feedback" height="100" width="1200" placeholder="Please enter your valueable feedback here!">
+        </textarea> <br><br>
+
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Network Notes</title>
+</head>
+<body>
+    <!--Error: No such tag found <font size = "16">SRG</font>-->
+    <h1>Computer Netwoks (160413)</h1>
+    <section>
+    <h2>Assignment -3</h2>
+    Q.1  What is the significance of Bridges? Explain the different types of Bridges. <br>
+    Ans 1). The core structure of the bridge determines how it distributes the internal forces of tension, compression, torsion, bending and sheer . 
+    While all bridges need to handle all those forces at all times, various types of bridges will dedicate more of their 
+    capacity to better handle specific types of forces.
+    Bridges are of two general types: fixed and movable. Fixed bridges are usually classified by 
+    their basic geometry such as arches, trusses, beams, girder, suspension and cable stayed. ... 
+    Suspension bridges, whose decks are suspended from cables and towers, are used in locations where it is difficult to place piers.
+    
+    <br><br>
+
+    Q.2 Explain the significance of Switching? What are different switching techniques used in computer networks? Discuss.
+    <br>
+    Ans 2). Switching refers to the process of determining the path via which our data packets will be sent. 
+    When dealing with a large network or a very long-distance data transmission, we need the assistance of external hardware. 
+    As a result, we need a specific path for our data packets to follow. <br>
+    <b>Types of Switching:</b><br>
+    1. Circuit Switching:
+    Circuit switching is a switching method that creates a dedicated channel between the transmitter and the receiver. 
+    <br>
+    2. Message Switching:
+    Message switching is a switching mechanism that transfers a message as a full and complete 
+    unit and routes it through intermediate nodes which store and forward the message. 
+    There is no specific path between the sender and recipient in the Message Switching method. 
+    <br>
+    3. Packet switching:
+    Packet switching is a switching technique in which the message is split into smaller 
+    bits and delivered separately rather than all at once. 
+
+    <br><br>
+
+    Q.3 Explain the differences between Pure and Slotted ALOHA Systems.
+    <br>
+    Ans 3). In Pure Aloha, any station can transmit data at any time. 
+    In Slotted Aloha, any station can transmit data only at beginning of any time slot. 
+    In Pure Aloha, time is continous and is not globally syncronized. 
+    In Slotted Aloha, time is discrete and is globally syncronized. 
+    <br><br>
+    Q.4 Explain the working of CSMA Protocol. <br>
+    Ans 4). Carrier Sense Multiple Access (CSMA) is a network protocol for 
+    carriertransmission that operates in the Medium Access Control (MAC) layer. 
+    It senses or listens whether the shared channel for transmission 
+    is busy or not, and transmits if the channel is not busy. 
+    <br><br>
+    Q.5 Describe the ARQ mechanism using suitable example.
+    <br>
+    Ans 5). ARQ stands for Automatic Repeat Request also known as Automatic Repeat Query. 
+    ARQ is an error-control strategy used in a two-way communication system. 
+    It is a group of error-control protocols to achieve reliable data transmission over an unreliable source or service. 
+    These protocols reside in Transport Layer and Data Link Layer of the OSI(Open System Interconnection) model . 
+    These protocols are responsible for automatic retransmission of packets that are found to be corrupted 
+    or lost during the transmission process. 
+    <br>
+    <b>Working Principle of ARQ</b><br>
+    The main function of these protocols is, the sender receives an acknowledgement from the receiver end implying 
+    that the frame or packet is received correctly before a timeout occurs, timeout is a specific time period 
+    within which the acknowledgement has to be sent by the receiver to the sender. 
+    If a timeout occurs: the sender does not receive the acknowledgement before the specified time, 
+    it is implied that the frame or packet has been corrupt or lost during the transmission. Accordingly, 
+    the sender retransmits the packet and these protocols ensure that this process is repeated until the correct packet is transmitted.<br>  
+    </section>
+    <hr>
+    <h2>Assignment 4</h2>
+    Q.1 Differentiate between Reservation and token passing mechanism  medium  access mechanism in MAC. <br>
+
+    Q.2 Explain TDMA, FDMA and CDMA channelization mechanism for accessing the medium using suitable application. <br>
+    <table>
+        <thead>
+        <b><caption>Difference between TDMA, CDMA & FDMA</caption></b>
+        <th>
+        <!-- <td>S. No.</td> -->
+        <b><td>FDMA</td></b>
+        <b><td>CDMA</td></b>
+        <b><td>TDMA</td></b>
+        </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>FDMA stands for Frequency <br> Division Multiple Access</td>
+                <td>CDMA stands for Code <br> Division Multiple Access</td>
+                <td>TDMA stands for Time <br> Division Multiple Access</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Codeword isn't neccessary</td>
+                <td>Codeword is neccessary</td>
+                <td>Codeword isn't neccessary</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Sharing of Bandwidth takes <br> place among different stations</td>
+                <td>Sharing of both time & Bandwidth <br> takes place amoung different stations</td>
+                <td>Sharing of time of satellite <br> trasponder takes place</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Syncronization isn't required</td>
+                <td>Syncronization isn't required</td>
+                <td>Syncronization is required</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    Q.3 Describe IEEE 802.3,802.4 and 802.5  standards along with frame format for data-link layer technologies specifications. <br>
+
+    Ans 3. <b>IEEE 802.3</b><br>
+    The IEEE 802.3 standard determines the CSMA/CD access control protocol. The best known scheme for controlling a local area network on <br> a bus structure is carrier sense multiple action with collision detection (CSMA/CD).<br>
+    <b>IEEE 802.4</b><br>
+    IEEE 802.4 describes a token bus LAN standards.In token passing methods, stations connected on a bus are arranged in a logical ring.<br> 
+    In this method only the station having token(token holder)is being permitted to transmit frames.<br>
+    <b>IEEE 802.5</b><br>
+    IEEE 802.5 describes the token ring standards. In a token ring a special bit pattern, called the token, circulates around the ring. <br> whenever all stations are idle.The sequence of token is determined by the physical locations of the stations on the ring.
+    <!---->
+    <hr>
+    <h2>Assignment 5</h2>
+
+    Q.1 Explain CRC code generation using example. <br>
+    Q.2 What is bit and byte stuffing? Explain with example. <br>
+    Q.3 Describe Go Back N and Selective Repeat ARQ protocol. <br>
+    Q.4 Explain Checksum generation using example <br>
+    Q.5 Write short notes on following: <br>
+    1. Distance vector routing <br>
+    2. Link State routing <br>
+    3. Floyd Warshall algorithm <br>
+
+    <br>Ans 1). <b>Cyclic Redundancy Check-</b> <br>
+	Cyclic Redundancy Check (CRC) is an error detection method. <br>
+	It is based on binary division. <br>
+    <b>CRC Generator-</b> <br>
+	CRC generator is an algebraic polynomial represented as a bit pattern. <br>
+	Bit pattern is obtained from the CRC generator using the following rule- <br>
+    <blockquote> The power of each term gives the position of the bit and the coefficient gives the value of the bit. </blockquote>
+    <b>Example-</b> <br> 
+    Consider the CRC generator is x7 + x6 + x4 + x3 + x + 1. <br>
+    The corresponding binary pattern is obtained as- <br>
+    <img src="Media/crc.png" height="100" alt="CRC Example-"><br>
+    Thus, for the given CRC generator, the corresponding binary pattern is 11011011. <br> <br> 
+
+    Ans 2). Bit stuffing:
+    <ul>
+    <li>Allows frame to contain arbitrary number of bits and arbitrary character size. The frames are separated by separating flag. </li>
+    <li>Each frame begins and ends with a special bit pattern, 01111110 called a flag byte. </li></ul>
+    <img src="Media/Bit Stuffing.jpg" alt="Bit Stuffing"> <br>
+    Byte stuffing:<br>
+    •	In this method, start and end of frame are recognized with the help of flag bytes. Each frame starts with and ends with a flag byte <br>
+    <img src="Media/Byte Stuffing.jpg" alt="Byte Stuffing"> <br> <br>
+
+    Ans 3). <b> Key Differences Between Go-Back-N and Selective Repeat </b> <br>
+    Go-Back-N protocol is design to retransmit all the frames that are arrived after the damaged or a lost frame. On the other hand, <br> Selective Repeat protocol retransmits only that frame that is damaged or lost. <br> <br>
+
+    Ans 4). A checksum is a value that represents the number of bits in a transmission message and is used by IT professionals to detect <br> high-level errors within data transmissions. Prior to transmission, every piece of data or file can be assigned a checksum value <br> after running a cryptographic hash function.<br> <br> 
+    <b>Checksum Example-</b><br>
+    Consider the data unit to be transmitted is- <br>
+    10011001111000100010010010000100 <br>
+    Consider 8-bit checksum is used. <br> <br> 
+     
+    The given data unit is divided into segments of 8 bits as- <br>
+    <img src="Media/checksum.png" alt="Checksum"><br>
+    Now, all the segments are added and the result is obtained as- <br>
+•	10011001 + 11100010 + 00100100 + 10000100 = 1000100011 <br>
+•	Since the result consists of 10 bits, so extra 2 bits are wrapped around. <br>
+•	00100011 + 10 = 00100101 (8 bits) <br>
+•	Now, 1's complement is taken which is 11011010. <br>
+•	Thus, checksum value = 11011010 <br> <br>
+    
+
+    Ans 5). <ol>
+    <li>A distance-vector routing (DVR) protocol requires that a router inform its neighbours of topology changes periodically. <br> Historically known as the old ARPANET routing algorithm (or known as Bellman-Ford algorithm). <br> </li>
+    <li>Link state routing is a method in which each router shares its neighbourhood's knowledge with every other router in the internetwork. <br> </li>
+    <li>Floyd-Warshall Algorithm is an algorithm for finding the shortest path between all the pairs of vertices in a weighted graph. This <br> algorithm works for both the directed and undirected weighted graphs. But it does not work for the graphs with negative <br> cycles (where the sum of the edges in a cycle is negative). </li> <br> <br>
+    </ol>
+</body>
+</html>
